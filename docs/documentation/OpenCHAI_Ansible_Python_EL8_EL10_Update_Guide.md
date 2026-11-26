@@ -79,11 +79,11 @@ availability before running the installation command.
 ### 2.2 Create the virtual environment
 
 ``` bash
-mkdir -p /opt/openchai/ansible
+mkdir -p /opt/openchai/automation/ansible
 
-python3.12 -m venv /opt/openchai/ansible/venv
+python3.12 -m venv /opt/openchai/automation/ansible/venv
 
-source /opt/openchai/ansible/venv/bin/activate
+source /opt/openchai/automation/ansible/venv/bin/activate
 
 python -m pip install --upgrade pip setuptools wheel
 
@@ -95,13 +95,13 @@ The deployment reported the following working environment:
 ``` text
 Ansible Core: 2.21.6
 Python:       3.12.16
-Venv:         /opt/openchai/ansible/venv
+Venv:         /opt/openchai/automation/ansible/venv
 ```
 
 ### 2.3 Verify the environment
 
 ``` bash
-source /opt/openchai/ansible/venv/bin/activate
+source /opt/openchai/automation/ansible/venv/bin/activate
 
 which ansible
 which ansible-playbook
@@ -114,8 +114,8 @@ python -m pip show ansible-core
 Expected executable path:
 
 ``` text
-/opt/openchai/ansible/venv/bin/ansible
-/opt/openchai/ansible/venv/bin/ansible-playbook
+/opt/openchai/automation/ansible/venv/bin/ansible
+/opt/openchai/automation/ansible/venv/bin/ansible-playbook
 ```
 
 Always use the virtual-environment executable when running OpenCHAI
